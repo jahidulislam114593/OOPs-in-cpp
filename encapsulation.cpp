@@ -15,6 +15,7 @@ int main()
     cin.tie(0);
 
     cout << "Helle Encapsulation" << endl;
+    cout << "Updated Encapsulation" << endl;
 
     return_loser;
 }

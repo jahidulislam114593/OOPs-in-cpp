@@ -3,10 +3,11 @@ This repository contains all the C++ code I am learning while exploring Object-O
 
 ## Topics Covered
 - Classes and Objects
+- Access Modifier
+- Encapsulation
 - Constructors and Destructors
 - Inheritance
 - Polymorphism
-- Encapsulation
 - Abstraction
 - Friend Functions
 - Operator Overloading
@@ -14,5 +15,5 @@ This repository contains all the C++ code I am learning while exploring Object-O
 - Templates
 
 ## Purpose
-This repository's goal is to document and track my learning progress in OOP with C++. It serves as both a reference for me and a resource for others who are interested in learning these concepts.
+The goal of this repository is to document and track my progress in learning OOP with C++. It serves as both a reference for me and a resource for others who are interested in learning these concepts.
 Feel free to explore the code and suggest improvements!

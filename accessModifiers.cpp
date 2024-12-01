@@ -11,7 +11,7 @@ const int N = 1e5 + 10;
 
 class Teacher
 {
-private: // data & method accessable inside class
+private: // data & method accessable inside class only
     double salary;
 
 public: // data & method accessable by everyone

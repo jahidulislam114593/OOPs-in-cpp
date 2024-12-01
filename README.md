@@ -4,15 +4,16 @@ This repository contains all the C++ code I am learning while exploring Object-O
 
 ## Topics Covered
 
-- Classes and Objects
-- Constructors and Destructors
+- Classes and Objects (Class -> blueprint, Object -> real world entity)
+- Access Modifier (public, private, protected)
+- Encapsulation (wrapping up of data/attribute & member function in a single unit called class)
+- Constructors (special method/function invoked automatically at the time of object creation. Used for initialization. Three types of constructor(Non-parameterized, Parameterized, Copy Constructor-> two type of Copy Constructor(Shallow Copy, Deep Copy)))
+- this (this is a special pointer in c++ that point to the current objects)
+- Destructor 
 - Inheritance
 - Polymorphism
 - Abstraction
-- Friend Functions
-- Operator Overloading
-- File Handling
-- Templates
+- Static-Keyword
 
 ## Purpose
 

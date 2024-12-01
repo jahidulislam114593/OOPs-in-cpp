@@ -15,6 +15,11 @@ private:
     double salary;
 
 public:
+    // Properties / attributes
+    string name;
+    string dept;
+    string subject;
+
     // Non-Parameterized Constructor
     Teacher()
     {
@@ -22,19 +27,24 @@ public:
     }
 
     // Parameterized Constructor
-    Teacher(string s, string d, string sub, double sal)
+    Teacher(string name, string dept, string subject, double salary)
     {
         cout << "I'm From Constructor" << '\n';
-        name = s;
-        dept = d;
-        subject = sub;
-        salary = sal;
+        this->name = name;
+        this->dept = dept;
+        this->subject = subject;
+        this->salary = salary;
     }
 
-    // Properties / attributes
-    string name;
-    string dept;
-    string subject;
+    // Custom Copy-Constructor
+    Teacher(Teacher &orjObj)
+    {
+        cout << "I'm From Cumtom Constructor..\n";
+        this->name = orjObj.name;
+        this->dept = orjObj.dept;
+        this->subject = orjObj.subject;
+        this->salary = orjObj.salary;
+    }
 
     // Methods / member function
     void changeDept(string newDept)
@@ -57,7 +67,10 @@ int main()
     cin.tie(0);
 
     Teacher t1("Jahid", "CSE", "OOPs", 30000); // constructor called automatically by compiler if we don't create
-    t1.getInfo();
+
+    // Teacher t2(t1); // default copy constructor
+    Teacher t2(t1); // Custom Copy-Constructor
+    t2.getInfo();
 
     return_loser;
 }

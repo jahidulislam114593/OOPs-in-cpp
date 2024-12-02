@@ -23,18 +23,16 @@ public:
         *cgpaPtr = cgpa;
     }
 
-    // copy-constructor --> shallow & deep copy
-    Student(Student &obj)
+    // destructor
+    ~Student()
     {
-        this->name = obj.name;
-        cgpaPtr = new double;
-        *cgpaPtr = *(obj.cgpaPtr);
+        cout << "I'm Deconstructor i delete everything\n";
+        delete cgpaPtr;
     }
-
     void getInfo()
     {
-        cout << "Name: " << name << endl;
-        cout << "Cgpa: " << *cgpaPtr << endl;
+        cout << name << endl;
+        cout << *cgpaPtr << endl;
     }
 };
 
@@ -43,14 +41,8 @@ int main()
     ios_base::sync_with_stdio(0);
     cin.tie(0);
 
-    Student s1("Jahid", 3.30);
-    // Student s2(s1); // default copy construtor (shallow copy)
-    Student s2(s1); // Custom copy construtor (shallow copy)
-    // s1.getInfo();
-    *(s2.cgpaPtr) = 3.9;
-    s2.name = "Mahanima";
+    Student s1("Jahid", 3.32);
     s1.getInfo();
-    s2.getInfo();
 
     return_loser;
 }
